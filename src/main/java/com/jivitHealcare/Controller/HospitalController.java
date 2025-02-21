@@ -413,9 +413,9 @@ public class HospitalController {
             healthCheckupRequest.setCoupon(coupon);
             healthCheckupRequest.setDoc1(doc1Url);
             healthCheckupRequest.setStatus(status);
-            healthCheckupRequest.setHospital(String.valueOf(hospital1));
+           // healthCheckupRequest.setHospital(String.valueOf(hospital1));
 
-           // healthCheckupRequest.setHospitalid(hospital1);
+            healthCheckupRequest.setHospitalid(hospital1);
 
             HealthCheckupRequest savedRequest = healthCheckupService.healthCheckupRequest(healthCheckupRequest);
             return ResponseEntity.ok(savedRequest);
